@@ -1,0 +1,48 @@
+# vlog rtl/scan_register.v
+# Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+# Start time: 23:54:56 on Nov 22,2026
+# vlog -reportprogress 300 rtl/scan_register.v 
+# -- Compiling module scan_register
+# 
+# Top level modules:
+# 	scan_register
+# End time: 23:54:57 on Nov 22,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv sim/tb_scan_faults.sv
+# Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+# Start time: 23:54:57 on Nov 22,2026
+# vlog -reportprogress 300 -sv sim/tb_scan_faults.sv 
+# -- Compiling module tb_scan_faults
+# 
+# Top level modules:
+# 	tb_scan_faults
+# End time: 23:54:57 on Nov 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -wlf "results/tb_scan_faults_$stamp.wlf" -voptargs="+acc" work.tb_scan_faults
+# vsim -wlf results/tb_scan_faults_1795388096.wlf -voptargs=""+acc"" work.tb_scan_faults 
+# Start time: 23:54:57 on Nov 22,2026
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+# Loading sv_std.std
+# Loading work.tb_scan_faults(fast)
+# Loading work.scan_register(fast)
+# Loading work.scan_register(fast__1)
+# run -all
+# Pattern 00 applied and observed
+# Pattern ff applied and observed
+# Pattern 55 applied and observed
+# Pattern aa applied and observed
+# q[0]: SA0 detected=1 SA1 detected=1
+# q[1]: SA0 detected=1 SA1 detected=1
+# q[2]: SA0 detected=1 SA1 detected=1
+# q[3]: SA0 detected=1 SA1 detected=1
+# q[4]: SA0 detected=1 SA1 detected=1
+# q[5]: SA0 detected=1 SA1 detected=1
+# q[6]: SA0 detected=1 SA1 detected=1
+# q[7]: SA0 detected=1 SA1 detected=1
+# Selected state-bit faults detected: 16 / 16
+# FAULT TEST PASS
+# ** Note: $finish    : sim/tb_scan_faults.sv(115)
+#    Time: 676 ns  Iteration: 0  Instance: /tb_scan_faults
+# 1
+# Break in Module tb_scan_faults at sim/tb_scan_faults.sv line 115
+# 
