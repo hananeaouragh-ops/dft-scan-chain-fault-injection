@@ -1,0 +1,50 @@
+# vlog rtl/scan_register.v
+# Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+# Start time: 23:54:04 on Nov 22,2026
+# vlog -reportprogress 300 rtl/scan_register.v 
+# -- Compiling module scan_register
+# 
+# Top level modules:
+# 	scan_register
+# End time: 23:54:05 on Nov 22,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv sim/tb_scan_register.sv
+# Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+# Start time: 23:54:05 on Nov 22,2026
+# vlog -reportprogress 300 -sv sim/tb_scan_register.sv 
+# -- Compiling module tb_scan_register
+# 
+# Top level modules:
+# 	tb_scan_register
+# End time: 23:54:05 on Nov 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -wlf "results/tb_scan_register_$stamp.wlf" -voptargs="+acc" work.tb_scan_register
+# vsim -wlf results/tb_scan_register_1795388044.wlf -voptargs=""+acc"" work.tb_scan_register 
+# Start time: 23:54:05 on Nov 22,2026
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading sv_std.std
+# Loading work.tb_scan_register(fast)
+# Loading work.scan_register(fast)
+# run -all
+# PASS: reset
+# PASS: normal capture = 3C
+# PASS: scan-out = 3C, scan-in = A5
+# PASS: scanned pattern A5 read back
+# PASS: capture 96 then scan-out 96
+# PASS: normal hold
+# PASS: reset after scan
+# SCAN TEST PASS: checks=13
+# ** Note: $finish    : sim/tb_scan_register.sv(115)
+#    Time: 351 ns  Iteration: 0  Instance: /tb_scan_register
+# 1
+# Break in Module tb_scan_register at sim/tb_scan_register.sv line 115
+# 
+do run_faults.do
+# End time: 23:54:56 on Nov 22,2026, Elapsed time: 0:00:51
+# Errors: 0, Warnings: 0
+# 0
+# reading modelsim.ini
+# Model Technology ModelSim SE-64 vmap 10.6d Lib Mapping Utility 2018.02 Feb 24 2018
+# vmap work work 
+# Modifying modelsim.ini
+# 1795388096
